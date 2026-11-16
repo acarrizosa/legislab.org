@@ -47,18 +47,33 @@
         <div class="idioma">
           <p class="rol">Puntos ideales</p>
           <p class="entrada">Un punto ideal es la posición de un legislador en un espacio político, estimada a partir de cómo vota. Quienes suelen votar juntos quedan cerca; quienes casi nunca coinciden quedan lejos. Así se puede ver, con los votos y no con etiquetas, quién se alinea con quién, cómo se ordenan los partidos y cómo cambian esas posiciones con el tiempo.</p>
-          <!-- Una entrada por cámara: "País: Cámara". Para sumar otra, copie un <li> y cambie el enlace. -->
-          <ul class="acciones camaras" aria-label="Cámaras disponibles">
-            <li><a class="boton boton-principal" href="site/paraguay/diputados/index.html">Paraguay: Cámara de Diputados</a></li>
-          </ul>
         </div>
         <div class="idioma" lang="en">
           <p class="rol">Ideal points</p>
           <p class="entrada">An ideal point is a legislator's position in a political space, estimated from how they vote. Legislators who often vote together end up close to each other; those who rarely agree end up far apart. This shows, from the votes themselves rather than from labels, who aligns with whom, how parties line up, and how those positions shift over time.</p>
-          <ul class="acciones camaras" aria-label="Available chambers">
-            <li><a class="boton boton-principal" href="site/paraguay/diputados/index.html#lang=en">Paraguay: Chamber of Deputies</a></li>
-          </ul>
         </div>
+      </div>
+
+      <div class="acciones tutorial">
+        <a class="boton boton-secundario" href="https://youtu.be/OYfG_9g7SPk" target="_blank" rel="noopener">Tutorial</a>
+      </div>
+
+      <!-- Un bloque por país. Para habilitar una cámara, cambie el <span> inactivo por un <a class="boton boton-principal" href="...">. -->
+      <div class="paises">
+        <section class="pais" aria-labelledby="p-paraguay">
+          <h2 class="pais-nombre" id="p-paraguay">Paraguay</h2>
+          <ul class="camaras">
+            <li><a class="boton boton-principal" href="site/paraguay/diputados/index.html">Cámara de Diputados</a></li>
+            <li><span class="boton boton-inactivo" aria-disabled="true">Cámara de Senadores (en construcción)</span></li>
+          </ul>
+        </section>
+        <section class="pais" aria-labelledby="p-peru">
+          <h2 class="pais-nombre" id="p-peru">Perú</h2>
+          <ul class="camaras">
+            <li><span class="boton boton-inactivo" aria-disabled="true">Cámara de Diputados (en construcción)</span></li>
+            <li><span class="boton boton-inactivo" aria-disabled="true">Cámara de Senadores (en construcción)</span></li>
+          </ul>
+        </section>
       </div>
     </section>
   </main>

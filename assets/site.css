@@ -223,6 +223,41 @@ a:hover { color: var(--yerba); }
   .idioma + .idioma { border-top: 1px solid var(--linea); padding-top: 2rem; }
 }
 
-/* Lista de cámaras: cada <li> es un botón "País: Cámara"; se acomodan en filas al sumar más. */
-.camaras { list-style: none; margin: 0; padding-left: 0; }
+/* Tutorial, debajo de las dos columnas */
+.tutorial { justify-content: center; padding-top: clamp(2rem, 4vw, 3rem); }
+
+/* Países y cámaras: un bloque por país; los bloques se acomodan en filas al sumar más. */
+.paises {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 2rem clamp(2rem, 5vw, 4.5rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--linea);
+}
+.pais-nombre {
+  font-family: var(--display);
+  font-stretch: 112%;
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--ocre);
+}
+.camaras {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
 .camaras li { margin: 0; }
+.boton-inactivo {
+  color: var(--gris);
+  border-color: var(--linea);
+  border-style: dashed;
+  cursor: not-allowed;
+}
